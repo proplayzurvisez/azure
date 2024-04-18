@@ -7943,8 +7943,3 @@ old__index2 = gamerawmetatable.__index;gamerawmetatable.__index = newcclosure(fu
     end
     return old__index2(self, property)
 end)
-
---// desktop fixed this btw
-if library:Initialize() then library:Initialize() end
-
-game:GetService("StarterGui"):SetCore("SendNotification",{Title = "azure (temporary notif)",Text = string.format("Took %ss", math.round((tick() - loadtick)) * 1000 / 1000),Duration = 3.6})
